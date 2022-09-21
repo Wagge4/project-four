@@ -3,6 +3,7 @@ const count = document.getElementById("count");
 const movieSelect = document.getElementById("movie");
 const total = document.getElementById("total");
 const seats = document.querySelectorAll(".row .seat:not(.booked)");
+bookButton = document.getElementById("bookButton");
 
 populateUI();
 
@@ -64,3 +65,16 @@ container.addEventListener("click", (e) => {
       updateSelectedCount();
     }
 });
+
+updateSelectedCount();
+
+const bookSeats = () => {
+  seats.forEach((seat) => {
+    if (seat.classList.contains("selected")) {
+      seat.classList.add("booked");
+      seat.classList.remove("selected");
+    }
+  });
+};
+
+bookButton.addEventListener("click", bookSeats);
