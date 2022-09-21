@@ -22,29 +22,29 @@ body {
 
 .movie-container select {
   background-color: #fff;
+  font-size: 16px;
   border: 0;
   border-radius: 5px;
-  font-size: 16px;
   margin-left: 10px;
   padding: 5px 15px 5px 15px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .container {
-  perspective: 1000px;
   margin-bottom: 30px;
+  perspective: 1000px;
 }
 
 .seat {
   background-color: green;
-  height: 26px;
   width: 32px;
+  height: 26px;
   margin: 3px;
   font-size: 50px;
-  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .seat.selected {
@@ -76,19 +76,19 @@ body {
 
 .showcase {
   background: rgba(0, 0, 0, 0.1);
-  padding: 5px 10px;
   border-radius: 5px;
+  padding: 5px 10px;
   color: #777;
+  justify-content: space-between;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
 }
 
 .showcase li {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 10px;
+  display: flex;
 }
 .showcase li small {
   margin-left: 2px;
@@ -96,4 +96,46 @@ body {
 
 .row {
   display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  margin: 15px 0;
+  width: 100%;
+  height: 120px;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  transform: rotateX(-52deg);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: rgb(158, 248, 158);
+}
+
+#bookButton {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  padding: 20px 0px;
+  font-size: 16px;
+  margin-top: 40px;
+  border-radius: 10px;
+  letter-spacing: 1.1px;
+  box-shadow: 0 9px #999;
+}
+
+#bookButton:hover {
+  background-color: #bbbaaa;
+}
+
+#bookButton:active {
+  transform: translateY(3.5px);
+  background-color: #bbbaaa;
+  box-shadow: 0 5px #666;
 }
