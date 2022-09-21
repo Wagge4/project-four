@@ -1,3 +1,4 @@
+/** Imports Google Font Style **/
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 * {
@@ -16,6 +17,7 @@ body {
   margin: 0;
 }
 
+/** Start of style to container **/
 .movie-container {
   margin: 20px 0;
 }
@@ -36,7 +38,10 @@ body {
   margin-bottom: 30px;
   perspective: 1000px;
 }
+/** End of style to container **/
 
+
+/** Start of style to booking seats **/
 .seat {
   background-color: green;
   width: 32px;
@@ -73,7 +78,10 @@ body {
   cursor: default;
   transform: scale(1);
 }
+/** End of style to booking seats **/
 
+
+/** Start of style to the showcase board **/
 .showcase {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -93,6 +101,7 @@ body {
 .showcase li small {
   margin-left: 2px;
 }
+/** End of style to the showcase board **/
 
 .row {
   display: flex;
@@ -115,6 +124,7 @@ p.text span {
   color: rgb(158, 248, 158);
 }
 
+/** Start of style to the book button **/
 #bookButton {
   color: #000;
   background-color: #fff;
@@ -139,3 +149,4 @@ p.text span {
   background-color: #bbbaaa;
   box-shadow: 0 5px #666;
 }
+/** End of style to the book button **/
